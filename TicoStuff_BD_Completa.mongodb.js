@@ -1,9 +1,11 @@
 //Esta conectada mongodb://localhost:27017/
 
 // The current database to use.
+
+
 use("TicoStuff_BD");
 
-/*db.createCollection("usuarios");
+db.createCollection("usuarios");
 db.createCollection("roles_permisos");
 db.createCollection("productos");
 db.createCollection("categorias");
@@ -14,11 +16,11 @@ db.createCollection("direcciones_envio");
 db.createCollection("contactos_soporte");
 db.createCollection("historial_notificaciones");
 db.createCollection("metodos_pago");
-db.createCollection("bitacora_auditoria");*/
+db.createCollection("bitacora_auditoria");
 
 
 //Documentos coleccion roles_permisos
-/*db.roles_permisos.insertMany([
+db.roles_permisos.insertMany([
   {
     _id: ObjectId("000000000000000000000101"),
     nombre_rol: "Administrador",
@@ -127,11 +129,11 @@ db.createCollection("bitacora_auditoria");*/
     fecha_creacion: new Date("2026-10-15")
   }
   
-]);*/
+]);
 
 
 //Documentos coleccion usuarios
-/*db.usuarios.insertMany([
+db.usuarios.insertMany([
   {
     _id: ObjectId("000000000000000000000201"),
     nombre: "Carlos",
@@ -312,11 +314,11 @@ db.createCollection("bitacora_auditoria");*/
       categorias_favoritas: ["Accesorios"]
     }
   }
-]);*/
+]);
 
 
 //Documentos coleccion categorias
-/*db.categorias.insertMany([
+db.categorias.insertMany([
   {
     _id: ObjectId("000000000000000000000301"),
     nombre: "Camisetas",
@@ -413,11 +415,11 @@ db.createCollection("bitacora_auditoria");*/
     estado: "activo",
     fecha_creacion: new Date("2026-10-15")
   }
-]);*/
+]);
 
 
 //Documentos coleccion drops
-/*db.drops.insertMany([
+db.drops.insertMany([
   {
     _id: ObjectId("000000000000000000000401"),
     nombre: "Drop Septiembre 2026",
@@ -526,10 +528,10 @@ db.createCollection("bitacora_auditoria");*/
     imagen_portada: "/imagenes/drop-agosto.jpg",
     fecha_creacion: new Date("2026-10-20")
   }
-]);*/
+]);
 
 //Documentos coleccion productos
-/*db.productos.insertMany([
+db.productos.insertMany([
   {
     _id: ObjectId("000000000000000000000501"),
     nombre: "Nike Sportswear T-Shirt",
@@ -692,10 +694,10 @@ db.createCollection("bitacora_auditoria");*/
     fecha_registro: new Date("2026-09-15"),
     estado_publicacion: "visible"
   }
-]);*/
+]);
 
 //Documentos coleccion inventario
-/*db.inventario.insertMany([
+db.inventario.insertMany([
   {
     _id: ObjectId("000000000000000000000601"),
     producto_id: ObjectId("000000000000000000000501"),
@@ -836,7 +838,7 @@ db.createCollection("bitacora_auditoria");*/
     cantidad_reservada: 0,
     fecha_actualizacion: new Date("2026-10-20")
   }
-]);*/
+]);
 
 
 //Documentos coleccion pedidos
