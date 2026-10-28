@@ -1,0 +1,41 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000801"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"nombre_receptor": "Andrea Mora",
+	"telefono": "8888-2222",
+	"provincia": "Alajuela",
+	"canton": "Alajuela",
+	"distrito": "Desamparados",
+	"direccion_exacta": "200 metros norte de la iglesia principal",
+	"referencia": "Casa color blanco con porton negro",
+	"predeterminada": true,
+	"fecha_registro": {
+		"$date": "2026-10-05T00:00:00Z"
+	},
+	"estado": "activo"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000802"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"nombre_receptor": "Andrea Mora",
+	"telefono": "8888-2222",
+	"provincia": "San Jose",
+	"canton": "San Jose",
+	"distrito": "Carmen",
+	"direccion_exacta": "Oficina ubicada frente al parque central",
+	"referencia": "Edificio de tres pisos",
+	"predeterminada": false,
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado": "activo"
+}]
+

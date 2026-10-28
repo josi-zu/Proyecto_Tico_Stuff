@@ -1,0 +1,97 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000701"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"numero_pedido": "PED-2026-001",
+	"productos": [
+		{
+			"producto_id": {
+				"$oid": "000000000000000000000501"
+			},
+			"inventario_id": {
+				"$oid": "000000000000000000000601"
+			},
+			"nombre": "Nike Sportswear T-Shirt",
+			"talla": "M",
+			"color": "Negro",
+			"cantidad": 1,
+			"precio_unitario": {
+				"$numberDecimal": "25000.00"
+			}
+		}
+	],
+	"direccion_envio_id": {
+		"$oid": "000000000000000000000801"
+	},
+	"metodo_pago_id": {
+		"$oid": "000000000000000000001101"
+	},
+	"subtotal": {
+		"$numberDecimal": "25000.00"
+	},
+	"costo_envio": {
+		"$numberDecimal": "2500.00"
+	},
+	"total": {
+		"$numberDecimal": "27500.00"
+	},
+	"estado": "confirmado",
+	"fecha_pedido": {
+		"$date": "2026-10-15T00:00:00Z"
+	},
+	"fecha_actualizacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000702"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"numero_pedido": "PED-2026-002",
+	"productos": [
+		{
+			"producto_id": {
+				"$oid": "000000000000000000000502"
+			},
+			"inventario_id": {
+				"$oid": "000000000000000000000604"
+			},
+			"nombre": "Essentials Hoodie",
+			"talla": "M",
+			"color": "Gris",
+			"cantidad": 1,
+			"precio_unitario": {
+				"$numberDecimal": "55000.00"
+			}
+		}
+	],
+	"direccion_envio_id": {
+		"$oid": "000000000000000000000802"
+	},
+	"metodo_pago_id": {
+		"$oid": "000000000000000000001102"
+	},
+	"subtotal": {
+		"$numberDecimal": "55000.00"
+	},
+	"costo_envio": {
+		"$numberDecimal": "3000.00"
+	},
+	"total": {
+		"$numberDecimal": "58000.00"
+	},
+	"estado": "pendiente",
+	"fecha_pedido": {
+		"$date": "2026-10-18T00:00:00Z"
+	},
+	"fecha_actualizacion": {
+		"$date": "2026-10-18T00:00:00Z"
+	}
+}]
+

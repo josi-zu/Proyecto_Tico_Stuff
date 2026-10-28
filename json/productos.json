@@ -1,0 +1,303 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000501"
+	},
+	"nombre": "Nike Sportswear T-Shirt",
+	"descripcion": "Camiseta Nike de algodón",
+	"marca": "Nike",
+	"categoria_id": {
+		"$oid": "000000000000000000000301"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"precio": {
+		"$numberDecimal": "25000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/nike-frente.jpg",
+		"/imagenes/nike-espalda.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000502"
+	},
+	"nombre": "Essentials Hoodie",
+	"descripcion": "Sudadera Essentials con capucha",
+	"marca": "Essentials",
+	"categoria_id": {
+		"$oid": "000000000000000000000302"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000401"
+	},
+	"precio": {
+		"$numberDecimal": "55000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/essentials-frente.jpg",
+		"/imagenes/essentials-espalda.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-09-15T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000503"
+	},
+	"nombre": "Supreme Box Logo T-Shirt",
+	"descripcion": "Camiseta urbana Supreme",
+	"marca": "Supreme",
+	"categoria_id": {
+		"$oid": "000000000000000000000301"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"precio": {
+		"$numberDecimal": "45000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/supreme-tshirt.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000504"
+	},
+	"nombre": "Nike Club Joggers",
+	"descripcion": "Pantalon deportivo Nike",
+	"marca": "Nike",
+	"categoria_id": {
+		"$oid": "000000000000000000000303"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"precio": {
+		"$numberDecimal": "35000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/nike-joggers.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000505"
+	},
+	"nombre": "Adidas Forum Low",
+	"descripcion": "Tenis Adidas estilo urbano",
+	"marca": "Adidas",
+	"categoria_id": {
+		"$oid": "000000000000000000000304"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000401"
+	},
+	"precio": {
+		"$numberDecimal": "65000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/adidas-forum.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-09-15T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000506"
+	},
+	"nombre": "Supreme Camp Cap",
+	"descripcion": "Gorra Supreme casual",
+	"marca": "Supreme",
+	"categoria_id": {
+		"$oid": "000000000000000000000305"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"precio": {
+		"$numberDecimal": "30000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/supreme-cap.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000507"
+	},
+	"nombre": "Nike Everyday Socks",
+	"descripcion": "Medias deportivas Nike",
+	"marca": "Nike",
+	"categoria_id": {
+		"$oid": "000000000000000000000309"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"precio": {
+		"$numberDecimal": "8500.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/nike-socks.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000508"
+	},
+	"nombre": "Essentials Sweatpants",
+	"descripcion": "Pantalon Essentials",
+	"marca": "Essentials",
+	"categoria_id": {
+		"$oid": "000000000000000000000303"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000401"
+	},
+	"precio": {
+		"$numberDecimal": "48000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/essentials-pants.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-09-15T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000509"
+	},
+	"nombre": "Nike Windrunner Jacket",
+	"descripcion": "Chaqueta deportiva Nike",
+	"marca": "Nike",
+	"categoria_id": {
+		"$oid": "000000000000000000000308"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"precio": {
+		"$numberDecimal": "52000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/nike-jacket.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000510"
+	},
+	"nombre": "Adidas Classic Backpack",
+	"descripcion": "Mochila casual Adidas",
+	"marca": "Adidas",
+	"categoria_id": {
+		"$oid": "000000000000000000000310"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000401"
+	},
+	"precio": {
+		"$numberDecimal": "28000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/adidas-backpack.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-09-15T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000511"
+	},
+	"nombre": "Nike Club Shorts",
+	"descripcion": "Short deportivo Nike",
+	"marca": "Nike",
+	"categoria_id": {
+		"$oid": "000000000000000000000307"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"precio": {
+		"$numberDecimal": "24000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/nike-shorts.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000512"
+	},
+	"nombre": "Supreme Shoulder Bag",
+	"descripcion": "Bolso compacto Supreme",
+	"marca": "Supreme",
+	"categoria_id": {
+		"$oid": "000000000000000000000310"
+	},
+	"drop_id": {
+		"$oid": "000000000000000000000401"
+	},
+	"precio": {
+		"$numberDecimal": "38000.00"
+	},
+	"condicion": "nuevo",
+	"imagenes": [
+		"/imagenes/supreme-bag.jpg"
+	],
+	"fecha_registro": {
+		"$date": "2026-09-15T00:00:00Z"
+	},
+	"estado_publicacion": "visible"
+}]
+

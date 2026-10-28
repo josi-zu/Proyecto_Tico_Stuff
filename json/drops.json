@@ -1,0 +1,181 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000401"
+	},
+	"nombre": "Drop Septiembre 2026",
+	"descripcion": "Lanzamiento de regreso de Tico Stuff",
+	"fecha_lanzamiento": {
+		"$date": "2026-09-15T00:00:00Z"
+	},
+	"estado": "finalizado",
+	"imagen_portada": "por definir",
+	"fecha_creacion": {
+		"$date": "2026-09-10T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"nombre": "Drop Octubre 2026",
+	"descripcion": "Lanzamiento de prendas Nike y Essentials",
+	"fecha_lanzamiento": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado": "publicado",
+	"imagen_portada": "por definir",
+	"fecha_creacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000403"
+	},
+	"nombre": "Drop Noviembre 2026",
+	"descripcion": "Lanzamiento de moda urbana",
+	"fecha_lanzamiento": {
+		"$date": "2026-11-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-noviembre.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000404"
+	},
+	"nombre": "Drop Diciembre 2026",
+	"descripcion": "Coleccion especial de fin de año",
+	"fecha_lanzamiento": {
+		"$date": "2026-12-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-diciembre.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000405"
+	},
+	"nombre": "Drop Enero 2027",
+	"descripcion": "Nueva coleccion de inicio de año",
+	"fecha_lanzamiento": {
+		"$date": "2027-01-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-enero.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000406"
+	},
+	"nombre": "Drop Febrero 2027",
+	"descripcion": "Lanzamiento de prendas casuales",
+	"fecha_lanzamiento": {
+		"$date": "2027-02-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-febrero.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000407"
+	},
+	"nombre": "Drop Marzo 2027",
+	"descripcion": "Coleccion de camisetas y accesorios",
+	"fecha_lanzamiento": {
+		"$date": "2027-03-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-marzo.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000408"
+	},
+	"nombre": "Drop Abril 2027",
+	"descripcion": "Coleccion de ropa deportiva",
+	"fecha_lanzamiento": {
+		"$date": "2027-04-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-abril.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000409"
+	},
+	"nombre": "Drop Mayo 2027",
+	"descripcion": "Lanzamiento de tenis y complementos",
+	"fecha_lanzamiento": {
+		"$date": "2027-05-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-mayo.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000410"
+	},
+	"nombre": "Drop Junio 2027",
+	"descripcion": "Coleccion de ropa urbana",
+	"fecha_lanzamiento": {
+		"$date": "2027-06-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-junio.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000411"
+	},
+	"nombre": "Drop Julio 2027",
+	"descripcion": "Coleccion especial de accesorios",
+	"fecha_lanzamiento": {
+		"$date": "2027-07-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-julio.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000412"
+	},
+	"nombre": "Drop Agosto 2027",
+	"descripcion": "Coleccion de nuevas tendencias",
+	"fecha_lanzamiento": {
+		"$date": "2027-08-15T00:00:00Z"
+	},
+	"estado": "programado",
+	"imagen_portada": "/imagenes/drop-agosto.jpg",
+	"fecha_creacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+}]
+

@@ -1,0 +1,225 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000601"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000501"
+	},
+	"sku": "NIKE-TSH-BLK-M",
+	"talla": "M",
+	"color": "Negro",
+	"cantidad_disponible": 5,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-12T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000602"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000501"
+	},
+	"sku": "NIKE-TSH-BLK-L",
+	"talla": "L",
+	"color": "Negro",
+	"cantidad_disponible": 3,
+	"cantidad_reservada": 1,
+	"fecha_actualizacion": {
+		"$date": "2026-10-12T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000603"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000501"
+	},
+	"sku": "NIKE-TSH-WHT-M",
+	"talla": "M",
+	"color": "Blanco",
+	"cantidad_disponible": 2,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-12T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000604"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000502"
+	},
+	"sku": "ESS-HOOD-GRY-M",
+	"talla": "M",
+	"color": "Gris",
+	"cantidad_disponible": 0,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-12T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000605"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000503"
+	},
+	"sku": "SUP-TSH-BLK-M",
+	"talla": "M",
+	"color": "Negro",
+	"cantidad_disponible": 4,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000606"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000504"
+	},
+	"sku": "NIKE-JOG-GRY-L",
+	"talla": "L",
+	"color": "Gris",
+	"cantidad_disponible": 6,
+	"cantidad_reservada": 1,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000607"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000505"
+	},
+	"sku": "ADI-FOR-WHT-9",
+	"talla": "9 US",
+	"color": "Blanco",
+	"cantidad_disponible": 0,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000608"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000506"
+	},
+	"sku": "SUP-CAP-BLK-UNI",
+	"talla": "Unica",
+	"color": "Negro",
+	"cantidad_disponible": 5,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000609"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000507"
+	},
+	"sku": "NIKE-SOC-WHT-M",
+	"talla": "M",
+	"color": "Blanco",
+	"cantidad_disponible": 12,
+	"cantidad_reservada": 2,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000610"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000508"
+	},
+	"sku": "ESS-PNT-GRY-L",
+	"talla": "L",
+	"color": "Gris",
+	"cantidad_disponible": 0,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000611"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000509"
+	},
+	"sku": "NIKE-JAC-BLU-M",
+	"talla": "M",
+	"color": "Azul",
+	"cantidad_disponible": 3,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000612"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000510"
+	},
+	"sku": "ADI-BAG-BLK-UNI",
+	"talla": "Unica",
+	"color": "Negro",
+	"cantidad_disponible": 8,
+	"cantidad_reservada": 1,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000613"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000511"
+	},
+	"sku": "NIKE-SHO-BLK-L",
+	"talla": "L",
+	"color": "Negro",
+	"cantidad_disponible": 7,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000614"
+	},
+	"producto_id": {
+		"$oid": "000000000000000000000512"
+	},
+	"sku": "SUP-BAG-RED-UNI",
+	"talla": "Unica",
+	"color": "Rojo",
+	"cantidad_disponible": 0,
+	"cantidad_reservada": 0,
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+}]
+

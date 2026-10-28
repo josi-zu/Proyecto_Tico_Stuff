@@ -1,0 +1,48 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000001201"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000101"
+	},
+	"accion": "actualizar",
+	"coleccion": "inventario",
+	"documento_id": {
+		"$oid": "000000000000000000000601"
+	},
+	"descripcion": "Actualizacion de cantidad disponible del inventario.",
+	"datos_anteriores": {
+		"cantidad_disponible": 6
+	},
+	"datos_nuevos": {
+		"cantidad_disponible": 5
+	},
+	"direccion_ip": "192.168.1.10",
+	"fecha": {
+		"$date": "2026-10-12T16:30:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000001202"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000101"
+	},
+	"accion": "crear",
+	"coleccion": "drops",
+	"documento_id": {
+		"$oid": "000000000000000000000402"
+	},
+	"descripcion": "Creacion del Drop Octubre 2026.",
+	"datos_anteriores": null,
+	"datos_nuevos": {
+		"nombre": "Drop Octubre 2026",
+		"estado": "publicado"
+	},
+	"direccion_ip": "192.168.1.10",
+	"fecha": {
+		"$date": "2026-10-01T15:00:00Z"
+	}
+}]
+

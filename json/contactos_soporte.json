@@ -1,0 +1,51 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000901"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"tipo_solicitud": "pedido",
+	"asunto": "Consulta sobre estado del pedido",
+	"mensaje": "Deseo conocer el estado actual de mi pedido PED-2026-001.",
+	"correo_contacto": "andrea@example.com",
+	"estado": "en_proceso",
+	"seguimiento": [
+		{
+			"fecha": {
+				"$date": "2026-10-16T00:00:00Z"
+			},
+			"usuario_id": {
+				"$oid": "000000000000000000000101"
+			},
+			"comentario": "Solicitud recibida y en revision."
+		}
+	],
+	"fecha_solicitud": {
+		"$date": "2026-10-16T00:00:00Z"
+	},
+	"fecha_actualizacion": {
+		"$date": "2026-10-16T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000902"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"tipo_solicitud": "producto",
+	"asunto": "Disponibilidad de talla",
+	"mensaje": "Quisiera saber si volvera a estar disponible la talla L de la camiseta Nike.",
+	"correo_contacto": "andrea@example.com",
+	"estado": "pendiente",
+	"seguimiento": [],
+	"fecha_solicitud": {
+		"$date": "2026-10-20T00:00:00Z"
+	},
+	"fecha_actualizacion": {
+		"$date": "2026-10-20T00:00:00Z"
+	}
+}]
+

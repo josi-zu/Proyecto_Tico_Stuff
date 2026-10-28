@@ -1,0 +1,191 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000101"
+	},
+	"nombre_rol": "Administrador",
+	"descripcion": "Gestiona el sistema de Tico Stuff",
+	"permisos": [
+		"gestionar_productos",
+		"gestionar_inventario",
+		"gestionar_drops",
+		"gestionar_pedidos",
+		"gestionar_usuarios"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"nombre_rol": "Cliente",
+	"descripcion": "Usuario registrado de la tienda",
+	"permisos": [
+		"consultar_productos",
+		"gestionar_perfil",
+		"crear_pedidos",
+		"consultar_pedidos"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000103"
+	},
+	"nombre_rol": "Gestor de Inventario",
+	"descripcion": "Administra existencias y variantes",
+	"permisos": [
+		"consultar_inventario",
+		"actualizar_inventario"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000104"
+	},
+	"nombre_rol": "Gestor de Productos",
+	"descripcion": "Administra el catalogo de productos",
+	"permisos": [
+		"crear_productos",
+		"editar_productos",
+		"consultar_productos"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000105"
+	},
+	"nombre_rol": "Gestor de Drops",
+	"descripcion": "Administra los lanzamientos",
+	"permisos": [
+		"crear_drops",
+		"editar_drops",
+		"consultar_drops"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000106"
+	},
+	"nombre_rol": "Ventas",
+	"descripcion": "Gestiona pedidos de clientes",
+	"permisos": [
+		"consultar_pedidos",
+		"actualizar_pedidos"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000107"
+	},
+	"nombre_rol": "Soporte",
+	"descripcion": "Atiende solicitudes de clientes",
+	"permisos": [
+		"consultar_soporte",
+		"responder_soporte"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000108"
+	},
+	"nombre_rol": "Marketing",
+	"descripcion": "Gestiona contenido promocional",
+	"permisos": [
+		"consultar_productos",
+		"consultar_drops",
+		"gestionar_notificaciones"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000109"
+	},
+	"nombre_rol": "Supervisor",
+	"descripcion": "Supervisa operaciones comerciales",
+	"permisos": [
+		"consultar_pedidos",
+		"consultar_inventario",
+		"consultar_usuarios"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000110"
+	},
+	"nombre_rol": "Encargado de Envios",
+	"descripcion": "Coordina entregas y envios",
+	"permisos": [
+		"consultar_pedidos",
+		"actualizar_envios"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000111"
+	},
+	"nombre_rol": "Auditor",
+	"descripcion": "Consulta registros del sistema",
+	"permisos": [
+		"consultar_bitacora",
+		"consultar_inventario"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000112"
+	},
+	"nombre_rol": "Analista",
+	"descripcion": "Consulta informacion para reportes",
+	"permisos": [
+		"consultar_productos",
+		"consultar_inventario",
+		"consultar_pedidos"
+	],
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+}]
+

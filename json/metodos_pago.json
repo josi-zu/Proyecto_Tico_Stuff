@@ -1,0 +1,35 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000001101"
+	},
+	"nombre": "SINPE Movil",
+	"tipo": "transferencia",
+	"descripcion": "Pago mediante SINPE Movil.",
+	"instrucciones": "Realizar el pago al numero indicado por Tico Stuff y enviar el comprobante.",
+	"requiere_comprobante": true,
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	},
+	"fecha_actualizacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000001102"
+	},
+	"nombre": "Transferencia bancaria",
+	"tipo": "transferencia",
+	"descripcion": "Pago mediante transferencia bancaria.",
+	"instrucciones": "Transferir el monto total a la cuenta bancaria indicada por Tico Stuff.",
+	"requiere_comprobante": true,
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	},
+	"fecha_actualizacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	}
+}]
+

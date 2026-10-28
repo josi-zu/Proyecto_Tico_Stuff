@@ -1,0 +1,287 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000201"
+	},
+	"nombre": "Carlos",
+	"apellido": "Ramirez",
+	"correo": "admin@ticostuff.example",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-1111",
+	"rol_id": {
+		"$oid": "000000000000000000000101"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-02T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [],
+		"categorias_favoritas": []
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"nombre": "Andrea",
+	"apellido": "Mora",
+	"correo": "andrea@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2222",
+	"rol_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-05T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [
+			"Nike",
+			"Supreme"
+		],
+		"categorias_favoritas": [
+			"Camisetas",
+			"Sudaderas"
+		]
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000203"
+	},
+	"nombre": "Daniel",
+	"apellido": "Vargas",
+	"correo": "daniel@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2003",
+	"rol_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-10T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [
+			"Nike"
+		],
+		"categorias_favoritas": [
+			"Camisetas"
+		]
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000204"
+	},
+	"nombre": "Sofia",
+	"apellido": "Jimenez",
+	"correo": "sofia@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2004",
+	"rol_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-11T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [
+			"Essentials"
+		],
+		"categorias_favoritas": [
+			"Sudaderas"
+		]
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000205"
+	},
+	"nombre": "Luis",
+	"apellido": "Mendez",
+	"correo": "luis@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2005",
+	"rol_id": {
+		"$oid": "000000000000000000000103"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-12T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [],
+		"categorias_favoritas": []
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000206"
+	},
+	"nombre": "Valeria",
+	"apellido": "Castro",
+	"correo": "valeria@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2006",
+	"rol_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-13T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [
+			"Supreme",
+			"Nike"
+		],
+		"categorias_favoritas": [
+			"Camisetas",
+			"Gorras"
+		]
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000207"
+	},
+	"nombre": "Jose",
+	"apellido": "Alvarado",
+	"correo": "jose@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2007",
+	"rol_id": {
+		"$oid": "000000000000000000000104"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-14T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [],
+		"categorias_favoritas": []
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000208"
+	},
+	"nombre": "Camila",
+	"apellido": "Rojas",
+	"correo": "camila@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2008",
+	"rol_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-15T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [
+			"Adidas"
+		],
+		"categorias_favoritas": [
+			"Tenis"
+		]
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000209"
+	},
+	"nombre": "Sebastian",
+	"apellido": "Solano",
+	"correo": "sebastian@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2009",
+	"rol_id": {
+		"$oid": "000000000000000000000105"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-16T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [],
+		"categorias_favoritas": []
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000210"
+	},
+	"nombre": "Mariana",
+	"apellido": "Araya",
+	"correo": "mariana@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2010",
+	"rol_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-17T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [
+			"Nike",
+			"Essentials"
+		],
+		"categorias_favoritas": [
+			"Sudaderas",
+			"Pantalones"
+		]
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000211"
+	},
+	"nombre": "Diego",
+	"apellido": "Herrera",
+	"correo": "diego@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2011",
+	"rol_id": {
+		"$oid": "000000000000000000000106"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-18T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [],
+		"categorias_favoritas": []
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000212"
+	},
+	"nombre": "Natalia",
+	"apellido": "Campos",
+	"correo": "natalia@example.com",
+	"password_hash": "HASH_PENDIENTE",
+	"telefono": "8888-2012",
+	"rol_id": {
+		"$oid": "000000000000000000000102"
+	},
+	"fecha_registro": {
+		"$date": "2026-10-19T00:00:00Z"
+	},
+	"estado": "activo",
+	"preferencias": {
+		"marcas_favoritas": [
+			"Supreme"
+		],
+		"categorias_favoritas": [
+			"Accesorios"
+		]
+	}
+}]
+

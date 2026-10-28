@@ -1,0 +1,43 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000001001"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"pedido_id": {
+		"$oid": "000000000000000000000701"
+	},
+	"soporte_id": null,
+	"tipo": "confirmacion_pedido",
+	"canal": "correo",
+	"destinatario": "andrea@example.com",
+	"asunto": "Confirmacion de pedido PED-2026-001",
+	"mensaje": "Su pedido fue registrado correctamente.",
+	"estado": "enviado",
+	"fecha_envio": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000001002"
+	},
+	"usuario_id": {
+		"$oid": "000000000000000000000202"
+	},
+	"pedido_id": null,
+	"soporte_id": {
+		"$oid": "000000000000000000000901"
+	},
+	"tipo": "soporte",
+	"canal": "correo",
+	"destinatario": "andrea@example.com",
+	"asunto": "Solicitud de soporte recibida",
+	"mensaje": "Hemos recibido su solicitud y sera atendida por nuestro equipo.",
+	"estado": "enviado",
+	"fecha_envio": {
+		"$date": "2026-10-16T00:00:00Z"
+	}
+}]
+

@@ -1,0 +1,145 @@
+[{
+	"_id": {
+		"$oid": "000000000000000000000301"
+	},
+	"nombre": "Camisetas",
+	"descripcion": "Camisetas de marcas reconocidas",
+	"slug": "camisetas",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000302"
+	},
+	"nombre": "Sudaderas",
+	"descripcion": "Hoodies y sudaderas de distintas marcas",
+	"slug": "sudaderas",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-01T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000303"
+	},
+	"nombre": "Pantalones",
+	"descripcion": "Jeans, joggers y pantalones casuales",
+	"slug": "pantalones",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000304"
+	},
+	"nombre": "Tenis",
+	"descripcion": "Calzado deportivo y urbano",
+	"slug": "tenis",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000305"
+	},
+	"nombre": "Gorras",
+	"descripcion": "Gorras de diferentes marcas",
+	"slug": "gorras",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000306"
+	},
+	"nombre": "Accesorios",
+	"descripcion": "Complementos de moda urbana",
+	"slug": "accesorios",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000307"
+	},
+	"nombre": "Shorts",
+	"descripcion": "Pantalones cortos deportivos y casuales",
+	"slug": "shorts",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000308"
+	},
+	"nombre": "Chaquetas",
+	"descripcion": "Chaquetas para diferentes estilos",
+	"slug": "chaquetas",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000309"
+	},
+	"nombre": "Medias",
+	"descripcion": "Medias deportivas y casuales",
+	"slug": "medias",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000310"
+	},
+	"nombre": "Bolsos",
+	"descripcion": "Mochilas, bolsos y canguros",
+	"slug": "bolsos",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000311"
+	},
+	"nombre": "Camisas",
+	"descripcion": "Camisas casuales de diferentes marcas",
+	"slug": "camisas",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "000000000000000000000312"
+	},
+	"nombre": "Conjuntos",
+	"descripcion": "Conjuntos de dos o mas prendas",
+	"slug": "conjuntos",
+	"estado": "activo",
+	"fecha_creacion": {
+		"$date": "2026-10-15T00:00:00Z"
+	}
+}]
+
