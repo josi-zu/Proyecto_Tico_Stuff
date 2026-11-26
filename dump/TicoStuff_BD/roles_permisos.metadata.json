@@ -1,1 +1,1 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"6a56e6901efd437993dd65f878d7c845","collectionName":"roles_permisos","type":"collection"}
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"71955cd53a9d44549c720ebf4f25cd85","collectionName":"roles_permisos","type":"collection"}

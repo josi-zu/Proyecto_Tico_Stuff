@@ -1,1 +1,1 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"a30daaeb97b246678757264dcc89f2be","collectionName":"inventario","type":"collection"}
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"sku":{"$numberInt":"1"}},"name":"sku_1","unique":true}],"uuid":"74c0cc8ebfd44a92a77cb7a4b5cfa06e","collectionName":"inventario","type":"collection"}
