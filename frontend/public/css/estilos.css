@@ -320,6 +320,7 @@ h1 { font-size: 3rem; }
 .carousel-control-next-icon {
     filter: drop-shadow(0 0 4px #000);
 }
+<<<<<<< HEAD
 /* Controles administrativos: visibles después de verificar el rol en el API. */
 body:not(.ts-administrador) [data-bs-target="#modalCrear"],
 body:not(.ts-administrador) a[onclick^="cargarDatos"],
@@ -327,6 +328,7 @@ body:not(.ts-administrador) #modalCrear,
 body:not(.ts-administrador) #modalEditar,
 body:not(.ts-administrador) #modalEliminar { display: none !important; }
 #filasBitacora pre { max-width: 32rem; max-height: 22rem; overflow: auto; white-space: pre-wrap; }
+=======
 
 /* ====== Logo ====== */
 .ts-logo-nav {
@@ -464,3 +466,4 @@ body:not(.ts-administrador) #modalEliminar { display: none !important; }
     border-radius: 0.25rem;
     border: 1px solid var(--ts-borde);
 }
+>>>>>>> 63b21bb (Actualiza nuevamente el respaldo de la base de datos)
