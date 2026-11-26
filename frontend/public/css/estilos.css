@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+
+/* ====== Paleta de la marca ====== */
+:root {
+    --ts-negro: #0a0a0a;
+    --ts-carbon: #141414;
+    --ts-grafito: #1e1e1e;
+    --ts-borde: #2e2e2e;
+    --ts-blanco: #f5f5f5;
+    --ts-gris: #9a9a9a;
+    --ts-acento: #e63946;
+    --ts-acento-oscuro: #c1121f;
+}
+
+/* Tema oscuro de Bootstrap con los colores de la marca */
+[data-bs-theme="dark"] {
+    --bs-body-bg: var(--ts-negro);
+    --bs-body-color: var(--ts-blanco);
+    --bs-border-color: var(--ts-borde);
+    --bs-secondary-color: var(--ts-gris);
+    --bs-tertiary-bg: var(--ts-grafito);
+    --bs-link-color: var(--ts-acento);
+    --bs-link-hover-color: #ff6b76;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--ts-negro);
+    color: var(--ts-blanco);
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+h1 { font-size: 3rem; }
+
+/* ====== Menú ====== */
+.ts-navbar {
+    background-color: var(--ts-negro);
+    border-bottom: 2px solid var(--ts-acento);
+    padding: 0.6rem 0;
+}
+
+.ts-navbar .navbar-brand {
+    font-size: 2rem;
+    color: var(--ts-blanco);
+    line-height: 1;
+}
+
+.ts-navbar .navbar-brand span {
+    color: var(--ts-acento);
+}
+
+.ts-navbar .nav-link {
+    color: var(--ts-gris);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease;
+}
+
+.ts-navbar .nav-link:hover,
+.ts-navbar .nav-link.active {
+    color: var(--ts-blanco);
+    box-shadow: inset 0 -2px 0 var(--ts-acento);
+}
+
+.ts-navbar .navbar-toggler {
+    border-color: var(--ts-borde);
+}
+
+/* ====== Portada ====== */
+.hero {
+    background:
+        linear-gradient(135deg, rgba(230, 57, 70, 0.18), transparent 55%),
+        var(--ts-carbon);
+    border: 1px solid var(--ts-borde);
+    border-left: 6px solid var(--ts-acento);
+    color: var(--ts-blanco);
+    padding: 4.5rem 1.5rem;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 9vw, 6rem);
+    line-height: 0.95;
+}
+
+.hero h1 span {
+    color: var(--ts-acento);
+}
+
+.hero .lead {
+    color: var(--ts-gris);
+}
+
+/* ====== Encabezado de cada módulo ====== */
+.ts-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--ts-borde);
+}
+
+.ts-encabezado h1 {
+    margin: 0;
+    line-height: 1;
+}
+
+.ts-subtitulo {
+    margin: 0.25rem 0 0;
+    color: var(--ts-gris);
+}
+
+/* ====== Tablas ====== */
+.ts-tabla-caja {
+    background: var(--ts-carbon);
+    border: 1px solid var(--ts-borde);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: var(--ts-grafito);
+    --bs-table-border-color: var(--ts-borde);
+}
+
+.table thead th {
+    color: var(--ts-gris);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--ts-acento);
+}
+
+/* ====== Botones ====== */
+.btn {
+    border-radius: 0.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--ts-acento);
+    --bs-btn-border-color: var(--ts-acento);
+    --bs-btn-hover-bg: var(--ts-acento-oscuro);
+    --bs-btn-hover-border-color: var(--ts-acento-oscuro);
+    --bs-btn-active-bg: var(--ts-acento-oscuro);
+    --bs-btn-active-border-color: var(--ts-acento-oscuro);
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+}
+
+.btn-light {
+    --bs-btn-bg: var(--ts-blanco);
+    --bs-btn-color: var(--ts-negro);
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-color: var(--ts-acento);
+}
+
+.btn-outline-light {
+    --bs-btn-border-color: var(--ts-borde);
+    --bs-btn-hover-bg: var(--ts-blanco);
+    --bs-btn-hover-color: var(--ts-negro);
+}
+
+/* ====== Formularios y modales ====== */
+.modal-content {
+    background-color: var(--ts-carbon);
+    border: 1px solid var(--ts-borde);
+    border-top: 3px solid var(--ts-acento);
+}
+
+.modal-header,
+.modal-footer {
+    border-color: var(--ts-borde);
+}
+
+.modal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-control,
+.form-select {
+    background-color: var(--ts-negro);
+    border-color: var(--ts-borde);
+    color: var(--ts-blanco);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--ts-negro);
+    color: var(--ts-blanco);
+    border-color: var(--ts-acento);
+    box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.25);
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: var(--ts-grafito);
+    color: var(--ts-gris);
+}
+
+.form-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ts-gris);
+}
+
+/* ====== Etiquetas de estado ====== */
+.badge-estado {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.4em 0.7em;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+.badge-programado { background: #f4a261; color: #111; }
+.badge-publicado  { background: var(--ts-acento); color: #fff; }
+.badge-finalizado { background: var(--ts-borde); color: var(--ts-gris); }
+
+/* ====== Tarjetas del catálogo (Paso 8) ====== */
+.tarjeta-producto {
+    background: var(--ts-carbon);
+    border: 1px solid var(--ts-borde);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-4px);
+    border-color: var(--ts-acento);
+}
+
+.tarjeta-producto img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.precio {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--ts-acento);
+}
+
+/* ====== Pie de página ====== */
+.ts-footer {
+    margin-top: 4rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--ts-borde);
+    color: var(--ts-gris);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* ====== Catálogo ====== */
+.marca-producto {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ts-gris);
+}
+
+.etiqueta-stock {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.35em 0.7em;
+    border-radius: 0.25rem;
+}
+
+.etiqueta-disponible { background: var(--ts-blanco); color: var(--ts-negro); }
+.etiqueta-agotado    { background: var(--ts-acento); color: #fff; }
+
+.tarjeta-agotada img {
+    filter: grayscale(1);
+    opacity: 0.55;
+}
+
+/* ====== Búsqueda y detalle ====== */
+.filtros-caja {
+    background: var(--ts-carbon);
+    border: 1px solid var(--ts-borde);
+    border-left: 4px solid var(--ts-acento);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.tarjeta-producto {
+    cursor: pointer;
+}
+
+.detalle-imagen {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(0 0 4px #000);
+}

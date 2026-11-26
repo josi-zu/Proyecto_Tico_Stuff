@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <title>Mantenimiento de Drops</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap-paleta-extendida.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="mimenupersonal"></div>
+        </header>
+
+        <main>
+            <div class="ts-encabezado">
+                <div>
+                    <h1>Drops</h1>
+                    <p class="ts-subtitulo">Lanzamientos de Tico Stuff</p>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#modalCrear">
+                    + Crear Drop
+                </button>
+            </div>
+
+            <div class="table-responsive ts-tabla-caja">
+                <table class="table table-hover align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Lanzamiento</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="nombreTabla"></tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="ts-footer">
+            © 2026 Tico Stuff · Reventa de ropa y accesorios
+        </footer>
+    </div>
+
+    <!-- Modal Crear -->
+    <div class="modal fade" id="modalCrear" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear Drop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="formDropCrear">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Descripción</label>
+                                <textarea class="form-control" id="descripcion" rows="2"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Fecha de lanzamiento</label>
+                                <input type="date" class="form-control" id="fecha_lanzamiento" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Estado</label>
+                                <select class="form-select" id="estado">
+                                    <option value="programado">Programado</option>
+                                    <option value="publicado">Publicado</option>
+                                    <option value="finalizado">Finalizado</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Imagen de portada (URL)</label>
+                                <input type="text" class="form-control" id="imagen_portada" />
+                                <small class="form-text text-body-secondary">Si lo dejas vacío se guarda "por
+                                    definir".</small>
+                            </div>
+                            <div class="mb-3">
+                                <button type="reset" class="btn btn-danger">Reset</button>
+                                <button type="submit" class="btn btn-success">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar -->
+    <div class="modal fade" id="modalEditar" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Drop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="formDropEditar">
+                            <div class="mb-3">
+                                <label class="form-label">Id</label>
+                                <input type="text" class="form-control" id="ideditar" readonly />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombreeditar" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Descripción</label>
+                                <textarea class="form-control" id="descripcioneditar" rows="2"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Fecha de lanzamiento</label>
+                                <input type="date" class="form-control" id="fecha_lanzamientoeditar" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Estado</label>
+                                <select class="form-select" id="estadoeditar">
+                                    <option value="programado">Programado</option>
+                                    <option value="publicado">Publicado</option>
+                                    <option value="finalizado">Finalizado</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Imagen de portada (URL)</label>
+                                <input type="text" class="form-control" id="imagen_portadaeditar" />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar -->
+    <div class="modal fade" id="modalEliminar" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Eliminar Drop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="formDropEliminar">
+                            <div class="mb-3">
+                                <label class="form-label">Id</label>
+                                <input type="text" class="form-control" id="ideliminar" disabled />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombreeliminar" disabled />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-danger">Eliminar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="js/menu.js" defer></script>
+    <script type="module" src="js/drops.js"></script>
+</body>
+
+</html>
