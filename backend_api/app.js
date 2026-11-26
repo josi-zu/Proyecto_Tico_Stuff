@@ -1,12 +1,18 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const origenFront = process.env.FRONTEND_ORIGIN || 'http://localhost:5002';
+
+// Varios orígenes separados por coma en el .env (ej. localhost y el tunnel del frontend)
+const origenesPermitidos = (process.env.FRONTEND_ORIGIN || 'http://localhost:5002')
+    .split(',')
+    .map(o => o.trim())
+    .filter(Boolean);
+
 app.disable('x-powered-by');
 app.set('trust proxy', false);
-app.use(cors({ origin: origenFront, credentials: true }));
+app.use(cors({ origin: origenesPermitidos, credentials: true }));
 app.use((req, res, next) => {
-    if (!['GET', 'HEAD', 'OPTIONS'].includes(req.method) && req.headers.origin && req.headers.origin !== origenFront) {
+    if (!['GET', 'HEAD', 'OPTIONS'].includes(req.method) && req.headers.origin && !origenesPermitidos.includes(req.headers.origin)) {
         return res.status(403).json({ mensaje: 'Origen no permitido' });
     }
     next();

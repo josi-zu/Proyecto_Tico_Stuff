@@ -1,29 +1,22 @@
-/*
-export const API = {
-    Productos: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/productos",
-    Categorias: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/categorias",
-    Drops: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/drops",
-    Inventario: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/inventario",
-    Sesion: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/sesion",
-    Seguridad: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/seguridad",
-}
-*/
+const BASE_LOCAL = "http://localhost:5001";
+const BASE_TUNEL = "https://pfdw6f4n-5001.use2.devtunnels.ms";
 
+// Si la página se abre en localhost usa el API local; si se abre desde el tunnel, usa el tunnel
+const esLocal = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+export const BASE = esLocal ? BASE_LOCAL : BASE_TUNEL;
 
 export const API = {
-    Productos: "http://localhost:5001/api/productos",
-    Categorias: "http://localhost:5001/api/categorias",
-    Drops: "http://localhost:5001/api/drops",
-    Inventario: "http://localhost:5001/api/inventario",
-    Sesion: "http://localhost:5001/api/sesion",
-    Seguridad: "http://localhost:5001/api/seguridad",
+    Productos: `${BASE}/api/productos`,
+    Categorias: `${BASE}/api/categorias`,
+    Drops: `${BASE}/api/drops`,
+    Inventario: `${BASE}/api/inventario`,
+    Sesion: `${BASE}/api/sesion`,
+    Seguridad: `${BASE}/api/seguridad`,
 }
 
-
-// Los AJAX existentes usan la cookie de sesión sin guardar contraseñas o roles.
+// Los AJAX usan la cookie de sesión sin guardar contraseñas o roles.
 $.ajaxPrefilter(function (opciones) {
-    if (opciones.url.startsWith('http://localhost:5001/')) {
+    if (opciones.url.startsWith(BASE + '/')) {
         opciones.xhrFields = { ...opciones.xhrFields, withCredentials: true };
     }
 });
-
