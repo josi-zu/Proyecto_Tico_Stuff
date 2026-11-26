@@ -25,39 +25,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-// POST
-router.post('/', async (req, res) => {
-    try {
-        const guardada = await new Categoria(req.body).save();
-        res.status(201).json({ mensaje: 'Categoría creada correctamente', data: guardada });
-    } catch (error) {
-        res.status(400).json({ mensaje: error.message });
-    }
-});
-
-// PUT por ID
-router.put('/:id', async (req, res) => {
-    try {
-        const actualizada = await Categoria.findByIdAndUpdate(req.params.id, req.body, {
-            new: true,
-            runValidators: true
-        });
-        if (!actualizada) return res.status(404).json({ mensaje: 'Categoría no encontrada' });
-        res.json({ mensaje: 'Categoría actualizada correctamente', data: actualizada });
-    } catch (error) {
-        res.status(400).json({ mensaje: error.message });
-    }
-});
-
-// DELETE por ID
-router.delete('/:id', async (req, res) => {
-    try {
-        const eliminada = await Categoria.findByIdAndDelete(req.params.id);
-        if (!eliminada) return res.status(404).json({ mensaje: 'Categoría no encontrada' });
-        res.json({ mensaje: 'Categoría eliminada correctamente', data: req.params.id });
-    } catch (error) {
-        res.status(400).json({ mensaje: error.message });
-    }
-});
+// Escrituras protegidas y auditadas. Las consultas anteriores siguen públicas.
+require('./operacionesAdministrativas')(router, Categoria, 'gestionar_categorias');
 
 module.exports = router;

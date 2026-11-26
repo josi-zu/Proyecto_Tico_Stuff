@@ -25,40 +25,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-// POST
-router.post('/', async (req, res) => {
-    try {
-        const guardado = await new Inventario(req.body).save();
-        res.status(201).json({ mensaje: 'Inventario creado correctamente', data: guardado });
-    } catch (error) {
-        res.status(400).json({ mensaje: error.message });
-    }
-});
-
-// PUT por ID
-router.put('/:id', async (req, res) => {
-    try {
-        req.body.fecha_actualizacion = new Date();
-        const actualizado = await Inventario.findByIdAndUpdate(req.params.id, req.body, {
-            new: true,
-            runValidators: true
-        });
-        if (!actualizado) return res.status(404).json({ mensaje: 'Registro de inventario no encontrado' });
-        res.json({ mensaje: 'Inventario actualizado correctamente', data: actualizado });
-    } catch (error) {
-        res.status(400).json({ mensaje: error.message });
-    }
-});
-
-// DELETE por ID
-router.delete('/:id', async (req, res) => {
-    try {
-        const eliminado = await Inventario.findByIdAndDelete(req.params.id);
-        if (!eliminado) return res.status(404).json({ mensaje: 'Registro de inventario no encontrado' });
-        res.json({ mensaje: 'Inventario eliminado correctamente', data: req.params.id });
-    } catch (error) {
-        res.status(400).json({ mensaje: error.message });
-    }
-});
+// Escrituras protegidas y auditadas. Las consultas anteriores siguen públicas.
+require('./operacionesAdministrativas')(router, Inventario, 'gestionar_inventario');
 
 module.exports = router;
