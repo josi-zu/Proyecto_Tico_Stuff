@@ -4,6 +4,8 @@ export const API = {
     Categorias: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/categorias",
     Drops: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/drops",
     Inventario: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/inventario",
+    Sesion: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/sesion",
+    Seguridad: "https://pfdw6f4n-5001.use2.devtunnels.ms/api/seguridad",
 }
 */
 
@@ -13,7 +15,6 @@ export const API = {
     Categorias: "http://localhost:5001/api/categorias",
     Drops: "http://localhost:5001/api/drops",
     Inventario: "http://localhost:5001/api/inventario",
-<<<<<<< HEAD
     Sesion: "http://localhost:5001/api/sesion",
     Seguridad: "http://localhost:5001/api/seguridad",
 }
@@ -24,7 +25,3 @@ $.ajaxPrefilter(function (opciones) {
         opciones.xhrFields = { ...opciones.xhrFields, withCredentials: true };
     }
 });
-=======
-}
-
->>>>>>> 63b21bb (Actualiza nuevamente el respaldo de la base de datos)
