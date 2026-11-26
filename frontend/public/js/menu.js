@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     let usuario = null;
     try {
-        const respuesta = await fetch('http://localhost:5001/api/sesion/actual', { credentials: 'include' });
+        const { API } = await import('./confi.js');
+        const respuesta = await fetch(API.Sesion + '/actual', { credentials: 'include' });
         if (respuesta.ok) usuario = await respuesta.json();
     } catch (error) { console.log('No se pudo consultar la sesión'); }
     if (usuario?.rol === 'Administrador') {
@@ -52,7 +53,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     document.getElementById('cerrarSesion')?.addEventListener('click', async function () {
         try {
-            const respuesta = await fetch('http://localhost:5001/api/sesion/logout', { method: 'POST', credentials: 'include' });
+            const { API } = await import('./confi.js');
+            const respuesta = await fetch(API.Sesion + '/logout', { method: 'POST', credentials: 'include' });
             if (!respuesta.ok) throw new Error('No se pudo cerrar la sesión');
             location.href = 'index.html';
         } catch (error) { alert('No se pudo cerrar la sesión. Intenta de nuevo.'); }
