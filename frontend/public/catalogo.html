@@ -23,16 +23,91 @@
             <div class="ts-encabezado">
                 <div>
                     <h1>Catálogo</h1>
-                    <p class="ts-subtitulo" id="contadorProductos">Cargando productos...</p>
+                    <p class="ts-subtitulo" id="contadorResultados">Cargando productos...</p>
                 </div>
             </div>
 
-            <div class="row g-4" id="contenedorProductos"></div>
+            <!-- Barra de búsqueda -->
+            <form id="formBusqueda" class="barra-busqueda">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </span>
+                    <input type="search" class="form-control" id="q"
+                        placeholder="Buscar por nombre, marca o descripción..." />
+                </div>
+                <button type="submit" class="btn btn-lupa" aria-label="Buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-outline-light btn-filtros" data-bs-toggle="collapse"
+                    data-bs-target="#panelFiltros">
+                    Filtros
+                </button>
+            </form>
+
+            <!-- Filtros (se despliegan con el botón) -->
+            <div class="collapse" id="panelFiltros">
+                <div class="filtros-panel">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                            <label class="form-label" for="filtroMarca">Marca</label>
+                            <select class="form-select" id="filtroMarca">
+                                <option value="">Todas</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label class="form-label" for="filtroCategoria">Categoría</label>
+                            <select class="form-select" id="filtroCategoria">
+                                <option value="">Todas</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label class="form-label" for="filtroCondicion">Condición</label>
+                            <select class="form-select" id="filtroCondicion">
+                                <option value="">Todas</option>
+                                <option value="nuevo">Nuevo</option>
+                                <option value="usado">Usado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light mt-3" id="btnLimpiar">Limpiar filtros</button>
+                </div>
+            </div>
+
+            <!-- Franja de drops -->
+            <div class="franja-drops" id="franjaDrops"></div>
+
+            <!-- Resultados -->
+            <div class="row g-4" id="resultados"></div>
         </main>
 
         <footer class="ts-footer">
             © 2026 Tico Stuff · Reventa de ropa y accesorios
         </footer>
+    </div>
+
+    <!-- Modal Detalle -->
+    <div class="modal fade" id="modalDetalle" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalleTitulo">Detalle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="detalleCuerpo"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

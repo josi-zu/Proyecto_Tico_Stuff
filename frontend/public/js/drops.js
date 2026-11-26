@@ -1,4 +1,5 @@
 import { API } from './confi.js';
+import { esc, normalizarImagen, esRutaImagen } from './utilidades.js';
 
 $(document).ready(function () {
     consultarDatos();
@@ -50,9 +51,16 @@ function muestreLosDatosEnTabla(response) {
     tabla.empty();
 
     response.forEach(elementIndividual => {
+        const portada = esRutaImagen(elementIndividual.imagen_portada)
+        ? elementIndividual.imagen_portada: 'img/logo.png';
         let fila = `
             <tr>
                 <td class="text-secondary small">${elementIndividual._id}</td>
+                <td>
+                    <img src="${esc(portada)}"
+                        class="miniatura-drop" alt="Portada"
+                        onerror="this.onerror=null;this.src='img/logo.png';">
+                    </td>
                 <td class="fw-semibold">${elementIndividual.nombre}</td>
                 <td>${elementIndividual.descripcion || ""}</td>
                 <td>${formatearFecha(elementIndividual.fecha_lanzamiento)}</td>
@@ -63,12 +71,12 @@ function muestreLosDatosEnTabla(response) {
                 </td>
                 <td class="text-nowrap">
                     <a class="btn btn-sm btn-outline-light"
-                       onclick="cargarDatosDrop('${elementIndividual._id}')"
-                       role="button">Modificar</a>
+                    onclick="cargarDatosDrop('${elementIndividual._id}')"
+                    role="button">Modificar</a>
 
                     <a class="btn btn-sm btn-primary"
-                       onclick="cargarDatosDropEliminar('${elementIndividual._id}')"
-                       role="button">Eliminar</a>
+                    onclick="cargarDatosDropEliminar('${elementIndividual._id}')"
+                    role="button">Eliminar</a>
                 </td>
             </tr>
         `;
@@ -85,7 +93,7 @@ function crearDrop() {
     };
 
     // Si se deja vacío, el API usa el valor por defecto "por definir"
-    const imagen = $("#imagen_portada").val();
+    const imagen = normalizarImagen($("#imagen_portada").val());
     if (imagen) objetoDrop.imagen_portada = imagen;
 
     $.ajax({
@@ -163,7 +171,7 @@ function editarDrop() {
         descripcion: $("#descripcioneditar").val(),
         fecha_lanzamiento: $("#fecha_lanzamientoeditar").val(),
         estado: $("#estadoeditar").val(),
-        imagen_portada: $("#imagen_portadaeditar").val()
+        imagen_portada: normalizarImagen($("#imagen_portadaeditar").val())
     };
 
     $.ajax({

@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     const paginas = [
         { archivo: "index.html", texto: "Inicio" },
         { archivo: "catalogo.html", texto: "Catálogo" },
-        { archivo: "busqueda.html", texto: "Búsqueda" },
         { archivo: "productos.html", texto: "Productos" },
         { archivo: "drops.html", texto: "Drops" },
         { archivo: "categorias.html", texto: "Categorías" },
@@ -36,7 +35,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         `
         <nav class="navbar navbar-expand-md ts-navbar" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">TICO <span>STUFF</span></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Tico Stuff" class="ts-logo-nav">
+                </a>
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
                         aria-controls="menuPrincipal" aria-expanded="false" aria-label="Menú">

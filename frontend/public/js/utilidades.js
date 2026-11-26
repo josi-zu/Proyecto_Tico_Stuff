@@ -15,3 +15,21 @@ export function formatearPrecio(precio) {
 export function formatearFecha(fecha) {
     return new Date(fecha).toLocaleDateString("es-CR", { timeZone: "UTC" });
 }
+
+// Si pegan un enlace de Google Imágenes (imgres?...), saca la URL real de la imagen
+export function normalizarImagen(texto) {
+    const valor = (texto || "").trim();
+    if (!valor) return "";
+    try {
+        const url = new URL(valor);
+        if (url.hostname.includes("google.") && url.pathname === "/imgres") {
+            return url.searchParams.get("imgurl") || valor;
+        }
+    } catch (e) { /* no es una URL, se deja igual */ }
+    return valor;
+}
+
+// Acepta rutas absolutas, URLs http(s) y rutas dentro del proyecto (img/...)
+export function esRutaImagen(texto) {
+    return typeof texto === "string" && /^(\/|https?:\/\/|img\/)/.test(texto);
+}

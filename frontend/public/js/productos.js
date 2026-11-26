@@ -1,5 +1,5 @@
 import { API } from './confi.js';
-import { esc, formatearPrecio } from './utilidades.js';
+import { esc, formatearPrecio, normalizarImagen, esRutaImagen } from './utilidades.js';
 
 $(document).ready(function () {
     cargarListas();

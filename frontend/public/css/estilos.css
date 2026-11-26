@@ -76,14 +76,14 @@ h1 { font-size: 3rem; }
 
 /* ====== Portada ====== */
 .hero {
-    background:
-        linear-gradient(135deg, rgba(230, 57, 70, 0.18), transparent 55%),
-        var(--ts-carbon);
-    border: 1px solid var(--ts-borde);
-    border-left: 6px solid var(--ts-acento);
-    color: var(--ts-blanco);
-    padding: 4.5rem 1.5rem;
-}
+        background:
+        linear-gradient(135deg, rgba(10, 10, 10, 0.88) 0%, rgba(10, 10, 10, 0.6) 100%),
+        url('../img/hero.jpg') center / cover no-repeat;
+        border: 1px solid var(--ts-borde);
+        border-left: 6px solid var(--ts-acento);
+        color: var(--ts-blanco);
+        padding: 4.5rem 1.5rem;
+        }
 
 .hero h1 {
     font-size: clamp(3rem, 9vw, 6rem);
@@ -320,6 +320,7 @@ h1 { font-size: 3rem; }
 .carousel-control-next-icon {
     filter: drop-shadow(0 0 4px #000);
 }
+<<<<<<< HEAD
 /* Controles administrativos: visibles después de verificar el rol en el API. */
 body:not(.ts-administrador) [data-bs-target="#modalCrear"],
 body:not(.ts-administrador) a[onclick^="cargarDatos"],
@@ -327,3 +328,142 @@ body:not(.ts-administrador) #modalCrear,
 body:not(.ts-administrador) #modalEditar,
 body:not(.ts-administrador) #modalEliminar { display: none !important; }
 #filasBitacora pre { max-width: 32rem; max-height: 22rem; overflow: auto; white-space: pre-wrap; }
+=======
+
+/* ====== Logo ====== */
+.ts-logo-nav {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.hero-logo {
+    width: min(420px, 80%);
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.logo-respaldo {
+    object-fit: contain !important;
+    padding: 2rem;
+    background: var(--ts-grafito);
+}
+
+/* ====== Barra de búsqueda con lupa ====== */
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.barra-busqueda .input-group {
+    flex: 1;
+}
+
+.barra-busqueda .input-group-text {
+    background: var(--ts-carbon);
+    border-color: var(--ts-borde);
+    color: var(--ts-gris);
+}
+
+.barra-busqueda .form-control {
+    height: 3rem;
+    font-size: 1.05rem;
+}
+
+.barra-busqueda .form-control:focus + .btn-lupa,
+.btn-lupa:hover {
+    background: var(--ts-acento-oscuro);
+}
+
+.btn-lupa {
+    height: 3rem;
+    width: 3.2rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ts-acento);
+    border: none;
+    color: #fff;
+}
+
+.btn-filtros {
+    height: 3rem;
+    white-space: nowrap;
+}
+
+.filtros-panel {
+    background: var(--ts-carbon);
+    border: 1px solid var(--ts-borde);
+    border-left: 4px solid var(--ts-acento);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ====== Franja de drops ====== */
+.franja-drops {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.chip-drop {
+    flex: 0 0 auto;
+    width: 190px;
+    background: var(--ts-carbon);
+    border: 1px solid var(--ts-borde);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.chip-drop:hover {
+    transform: translateY(-2px);
+    border-color: var(--ts-gris);
+}
+
+.chip-drop.activo {
+    border-color: var(--ts-acento);
+    box-shadow: 0 0 0 1px var(--ts-acento);
+}
+
+.chip-drop img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+}
+
+.chip-drop .chip-texto {
+    padding: 0.5rem 0.75rem;
+}
+
+.chip-drop .chip-nombre {
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.chip-drop .chip-estado {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ts-gris);
+}
+
+/* Miniatura en la tabla de Drops */
+.miniatura-drop {
+    width: 72px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    border: 1px solid var(--ts-borde);
+}
+>>>>>>> 63b21bb (Actualiza nuevamente el respaldo de la base de datos)
