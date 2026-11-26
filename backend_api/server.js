@@ -1,32 +1,9 @@
 require('dotenv').config();
-
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
-
-const app = express();
-
+const conectarBD = require('./config/conexion');
+const app = require('./app');
 const PORT = process.env.PORT || 5001;
 
-app.use(cors());
-app.use(express.json());
-
-app.get('/', (req, res) => {
-    res.json({ mensaje: 'API de Tico Stuff funcionando' })
-});
-
-app.use('/api/productos', require('./routes/productoRoutes'));
-app.use('/api/categorias', require('./routes/categoriaRoutes'));
-app.use('/api/drops', require('./routes/dropRoutes'));
-app.use('/api/inventario', require('./routes/inventarioRoutes'));
-
-mongoose.connect(process.env.MONGO_URI).then(() => {
-    console.log("bd nosql conectada");
-
-    app.listen(PORT, () => {
-        console.log(`Server API http://localhost:${PORT}`);
-    })
-})
-    .catch((error) => {
-        console.error("Error al conectar bd", error.message)
-    });
+conectarBD().then(() => {
+    const servidor = app.listen(PORT, () => console.log(`Server API http://localhost:${PORT}`));
+    servidor.on('error', error => { console.error('No se pudo iniciar el API:', error.message); process.exit(1); });
+}).catch(error => { console.error('Error al conectar bd:', error.message); process.exit(1); });

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
 
     const mimenupersonal = document.getElementById("mimenupersonal");
 
@@ -12,6 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
         { archivo: "inventario.html", texto: "Inventario" }
     ];
 
+    let usuario = null;
+    try {
+        const respuesta = await fetch('http://localhost:5001/api/sesion/actual', { credentials: 'include' });
+        if (respuesta.ok) usuario = await respuesta.json();
+    } catch (error) { console.log('No se pudo consultar la sesión'); }
+    if (usuario?.rol === 'Administrador') {
+        document.body.classList.add('ts-administrador');
+        paginas.push({ archivo: 'seguridad.html', texto: 'Seguridad' });
+    }
+    if (!usuario) paginas.push({ archivo: 'sesion.html', texto: 'Iniciar sesión' });
+
     const actual = location.pathname.split("/").pop() || "index.html";
 
     let enlaces = "";
@@ -20,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         enlaces += `<a class="nav-link ${activo}" href="${p.archivo}">${p.texto}</a>`;
     });
 
+    if (usuario) enlaces += '<button id="cerrarSesion" class="btn btn-outline-light ms-2" type="button">Cerrar sesión</button>';
     mimenupersonal.innerHTML =
         `
         <nav class="navbar navbar-expand-md ts-navbar" data-bs-theme="dark">
@@ -37,4 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
         </nav>
         `;
 
+    document.getElementById('cerrarSesion')?.addEventListener('click', async function () {
+        try {
+            const respuesta = await fetch('http://localhost:5001/api/sesion/logout', { method: 'POST', credentials: 'include' });
+            if (!respuesta.ok) throw new Error('No se pudo cerrar la sesión');
+            location.href = 'index.html';
+        } catch (error) { alert('No se pudo cerrar la sesión. Intenta de nuevo.'); }
+    });
 });

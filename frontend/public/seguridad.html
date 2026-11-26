@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <title>Tico Stuff · Seguridad y auditoría</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap-paleta-extendida.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="mimenupersonal"></div>
+        </header>
+        <main class="py-4">
+            <h1>Seguridad y auditoría</h1>
+            <p id="mensajeSeguridad" role="status">Comprobando acceso...</p>
+            <div id="contenidoSeguridad" hidden>
+                <h2>Roles y permisos</h2>
+                <div class="table-responsive"><table class="table table-dark table-striped">
+                    <thead><tr><th>Rol</th><th>Descripción</th><th>Permisos</th><th>Estado</th></tr></thead>
+                    <tbody id="filasRoles"></tbody>
+                </table></div>
+                <h2 class="mt-4">Bitácora de auditoría</h2>
+                <form id="filtrosBitacora" class="row g-3 mb-3">
+                    <div class="col-md-4"><label for="coleccion" class="form-label">Colección</label>
+                    <select id="coleccion" class="form-select"><option value="">Todas</option>
+                    <option>productos</option><option>categorias</option><option>drops</option><option>inventario</option></select></div>
+                    <div class="col-md-4"><label for="accion" class="form-label">Acción</label>
+                    <select id="accion" class="form-select"><option value="">Todas</option>
+                    <option value="crear">Crear</option><option value="actualizar">Actualizar</option><option value="eliminar">Eliminar</option></select></div>
+                    <div class="col-md-4 d-flex align-items-end"><button class="btn btn-primary" type="submit">Consultar</button></div>
+                </form>
+                <div class="table-responsive"><table class="table table-dark table-striped align-middle">
+                    <thead><tr><th>Fecha</th><th>Usuario</th><th>Acción</th><th>Documento</th><th>IP</th><th>Datos</th></tr></thead>
+                    <tbody id="filasBitacora"></tbody>
+                </table></div>
+                <div class="d-flex gap-3 align-items-center"><button id="anterior" class="btn btn-outline-light" type="button">Anterior</button>
+                <span id="pagina"></span><button id="siguiente" class="btn btn-outline-light" type="button">Siguiente</button></div>
+            </div>
+        </main>
+
+        <footer class="ts-footer">
+            © 2026 Tico Stuff · Reventa de ropa y accesorios
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="js/menu.js" defer></script>
+    <script type="module" src="js/seguridad.js"></script>
+</body>
+
+</html>
