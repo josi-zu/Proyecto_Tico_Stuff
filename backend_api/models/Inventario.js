@@ -84,4 +84,3 @@ module.exports = mongoose.model(
   'Inventario',
   InventarioSchema
 );
-
