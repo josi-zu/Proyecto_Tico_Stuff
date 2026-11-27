@@ -1,2 +1,17 @@
-﻿node_modules/
+﻿
+# Ignorar dependencias de Node.js
+node_modules/
+**/node_modules/
+
+# No subir credenciales de conexión
 .env
+.env.*
+!.env.example
+
+# Archivos temporales
+*.log
+npm-debug.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
